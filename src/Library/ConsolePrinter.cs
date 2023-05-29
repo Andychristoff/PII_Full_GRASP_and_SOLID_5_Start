@@ -4,9 +4,9 @@ namespace Full_GRASP_And_SOLID
 {
     public class ConsolePrinter : IPrinter
     {
-        public void PrintRecipe(Recipe recipe)
+        public void PrintRecipe(IPrintcontent printcontent)
         {
-            Console.WriteLine(recipe.GetTextToPrint());
+            Console.WriteLine(printcontent.GetTextToPrint());
         }
     }
 }
